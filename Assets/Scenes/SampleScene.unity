@@ -426,7 +426,7 @@ MonoBehaviour:
   grabDetect: {fileID: 1450707872}
   boxHolder: {fileID: 32265673}
   box: {fileID: 920285865}
-  rayDist: 0.5
+  rayDist: 0.75
   grabbing: 0
 --- !u!95 &395311741
 Animator:
@@ -934,7 +934,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d43d120b9058d4fa06468e64925cd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 395311734}
   worldStatus: 0
   groundDetect: {fileID: 106914399}
 --- !u!1 &1450707871

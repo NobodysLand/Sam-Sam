@@ -33,39 +33,43 @@ public class CharacterMovement : MonoBehaviour
         if (Input.GetKeyDown("left"))
         {
             sr.flipX = false;
-            grabDetector.transform.position = new Vector3(0.16f, grabDetector.transform.position.y, grabDetector.transform.position.z);
+            grabDetector.transform.position = new Vector3(GetComponent<Transform>().position.x - 0.80f, grabDetector.transform.position.y, grabDetector.transform.position.z);
             rb.velocity = new Vector3(-5f, rb.velocity.y, 0);
         }
 
         if (Input.GetKeyDown("right"))
         {
             sr.flipX = true;
-            grabDetector.transform.position = new Vector3(-0.16f, grabDetector.transform.position.y, grabDetector.transform.position.z);
+            grabDetector.transform.position = new Vector3(GetComponent<Transform>().position.x + 0.80f, grabDetector.transform.position.y, grabDetector.transform.position.z);
             rb.velocity = new Vector3(5f, rb.velocity.y, 0);
         }
 
     }
 
-    private float checkValue(float number, bool negative)
+    private float checkValue(float number)
     {
 
-        number = number * -1;
-
-        if(number > 0 && negative == false)
+        if (number > 0 && sr.flipX)
         {
+            Debug.Log(number);
             return number;
         }
-        if (number > 0 && negative == true)
+        if (number > 0 && !sr.flipX)
         {
-            return number * -1;
+            Debug.Log(number);
+            Debug.Log(number * -1f);
+            return number * -1f;
         }
-        if (number < 0 && negative == false)
+        if (number < 0 && !sr.flipX)
         {
-            return number * -1;
-        }
-        if (number < 0 && negative == true)
-        {
+            Debug.Log(number);
             return number;
+        }
+        if (number < 0 && sr.flipX)
+        {
+            Console.WriteLine(number);
+            Console.WriteLine(number * -1f);
+            return number * -1f;
         }
 
         return number;
