@@ -1,31 +1,55 @@
 fileFormatVersion: 2
-guid: 2a068edd6204206449480bb60f5c2254
+guid: 6e377ae7e4123b94bac8d95feba5df30
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2828583913888498693
-    second: Samantha_purple_running_0
+      213: -5691703585465598301
+    second: Samantha_purple_running_grab_0
   - first:
-      213: -3698018409243918048
-    second: Samantha_purple_running_1
+      213: -9193478542032152126
+    second: Samantha_purple_running_grab_1
   - first:
-      213: 3198686980378352409
-    second: Samantha_purple_running_2
+      213: 550013111358434269
+    second: Samantha_purple_running_grab_2
   - first:
-      213: -6032368483044313474
-    second: Samantha_purple_running_3
+      213: -2676866093390376462
+    second: Samantha_purple_running_grab_3
   - first:
-      213: -8097591429248894550
-    second: Samantha_purple_running_4
+      213: -370581027692329231
+    second: Samantha_purple_running_grab_4
   - first:
-      213: 868108609742041233
-    second: Samantha_purple_running_5
+      213: 3831541265184984774
+    second: Samantha_purple_running_grab_5
   - first:
-      213: -1180186569561038600
-    second: Samantha_purple_running_6
+      213: 3779103929037388063
+    second: Samantha_purple_running_grab_6
   - first:
-      213: -1416732871379584514
-    second: Samantha_purple_running_7
+      213: -4576725047792444731
+    second: Samantha_purple_running_grab_7
+  - first:
+      213: -2431494710983906286
+    second: Samantha_purple_running_grab_8
+  - first:
+      213: -9024647071187187690
+    second: Samantha_purple_running_grab_9
+  - first:
+      213: -193972488079675277
+    second: Samantha_purple_running_grab_10
+  - first:
+      213: 2724899806396322323
+    second: Samantha_purple_running_grab_11
+  - first:
+      213: 3827062288349506386
+    second: Samantha_purple_running_grab_12
+  - first:
+      213: -5493180328568432802
+    second: Samantha_purple_running_grab_13
+  - first:
+      213: 7863081508526014833
+    second: Samantha_purple_running_grab_14
+  - first:
+      213: -8552333330525199274
+    second: Samantha_purple_running_grab_15
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -127,12 +151,96 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Samantha_purple_running_0
+      name: Samantha_purple_running_grab_8
       rect:
         serializedVersion: 2
-        x: 6
+        x: 3
+        y: 2
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21c20966178914ed0800000000000000
+      internalID: -2431494710983906286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samantha_purple_running_grab_9
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 2
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6184e9aad4302c280800000000000000
+      internalID: -9024647071187187690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samantha_purple_running_grab_10
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 2
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 370ffcfbc0fde4df0800000000000000
+      internalID: -193972488079675277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samantha_purple_running_grab_11
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 2
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31298c0dfe9c0d520800000000000000
+      internalID: 2724899806396322323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samantha_purple_running_grab_12
+      rect:
+        serializedVersion: 2
+        x: 147
         y: 4
-        width: 27
+        width: 30
         height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -141,19 +249,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 50445bc4516214720800000000000000
-      internalID: 2828583913888498693
+      spriteID: 25bad56efd47c1530800000000000000
+      internalID: 3827062288349506386
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Samantha_purple_running_1
+      name: Samantha_purple_running_grab_13
       rect:
         serializedVersion: 2
-        x: 41
+        x: 181
         y: 3
-        width: 27
+        width: 30
         height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -162,19 +270,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 021492889dffdacc0800000000000000
-      internalID: -3698018409243918048
+      spriteID: e57d384689d44c3b0800000000000000
+      internalID: -5493180328568432802
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Samantha_purple_running_2
+      name: Samantha_purple_running_grab_14
       rect:
         serializedVersion: 2
-        x: 77
-        y: 3
-        width: 27
+        x: 217
+        y: 2
+        width: 30
         height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -183,19 +291,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91b5e1d7cd4046c20800000000000000
-      internalID: 3198686980378352409
+      spriteID: 171c2abb8f64f1d60800000000000000
+      internalID: 7863081508526014833
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Samantha_purple_running_3
+      name: Samantha_purple_running_grab_15
       rect:
         serializedVersion: 2
-        x: 113
-        y: 4
-        width: 27
+        x: 253
+        y: 2
+        width: 30
         height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -204,92 +312,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e76b1e553d8b84ca0800000000000000
-      internalID: -6032368483044313474
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Samantha_purple_running_4
-      rect:
-        serializedVersion: 2
-        x: 150
-        y: 5
-        width: 27
-        height: 44
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aa93f5b7f739f9f80800000000000000
-      internalID: -8097591429248894550
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Samantha_purple_running_5
-      rect:
-        serializedVersion: 2
-        x: 184
-        y: 4
-        width: 27
-        height: 44
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 190f12e5e242c0c00800000000000000
-      internalID: 868108609742041233
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Samantha_purple_running_6
-      rect:
-        serializedVersion: 2
-        x: 219
-        y: 3
-        width: 27
-        height: 44
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8f0a0a061922f9fe0800000000000000
-      internalID: -1180186569561038600
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Samantha_purple_running_7
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 3
-        width: 27
-        height: 44
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ef9fccba5f0c65ce0800000000000000
-      internalID: -1416732871379584514
+      spriteID: 654ef49e522005980800000000000000
+      internalID: -8552333330525199274
       vertices: []
       indices: 
       edges: []
@@ -297,7 +321,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: ba3d97ea7bcc5ed4aa9a17597099b33a
+    spriteID: 56d033a93a92ad248ab5c9ec58c4d3f1
     internalID: 0
     vertices: []
     indices: 

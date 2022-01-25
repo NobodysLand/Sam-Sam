@@ -9,6 +9,8 @@ public class CharacterMovement : MonoBehaviour
     private Rigidbody2D rb;
     private SpriteRenderer sr;
     public GameObject grabDetector;
+    public GameObject grabHolder;
+    public Animator animator;
 
     // Start is called before the first frame update
     void Start()
@@ -21,9 +23,20 @@ public class CharacterMovement : MonoBehaviour
     void Update()
     {
 
+
+
         float dirX = Input.GetAxis("Horizontal");
         float dirY = Input.GetAxis("Vertical");
+
         rb.velocity = new Vector2(dirX * 7f, rb.velocity.y);
+
+        animator.SetFloat("Speed", Mathf.Abs(dirX));
+
+        if (Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            animator.SetBool("Change", !animator.GetBool("Change"));
+
+        }
 
         if (Input.GetKeyDown("up"))
         {
@@ -33,46 +46,19 @@ public class CharacterMovement : MonoBehaviour
         if (Input.GetKeyDown("left"))
         {
             sr.flipX = false;
-            grabDetector.transform.position = new Vector3(GetComponent<Transform>().position.x - 0.80f, grabDetector.transform.position.y, grabDetector.transform.position.z);
+            grabDetector.transform.position = new Vector3(GetComponent<Transform>().position.x - 1f, grabDetector.transform.position.y, grabDetector.transform.position.z);
+            grabHolder.transform.position = new Vector3(GetComponent<Transform>().position.x - 0.2f, grabHolder.transform.position.y, grabHolder.transform.position.z);
             rb.velocity = new Vector3(-5f, rb.velocity.y, 0);
         }
 
         if (Input.GetKeyDown("right"))
         {
             sr.flipX = true;
-            grabDetector.transform.position = new Vector3(GetComponent<Transform>().position.x + 0.80f, grabDetector.transform.position.y, grabDetector.transform.position.z);
+            grabDetector.transform.position = new Vector3(GetComponent<Transform>().position.x + 1f, grabDetector.transform.position.y, grabDetector.transform.position.z);
+            grabHolder.transform.position = new Vector3(GetComponent<Transform>().position.x + 0.2f, grabHolder.transform.position.y, grabHolder.transform.position.z);
             rb.velocity = new Vector3(5f, rb.velocity.y, 0);
         }
 
-    }
-
-    private float checkValue(float number)
-    {
-
-        if (number > 0 && sr.flipX)
-        {
-            Debug.Log(number);
-            return number;
-        }
-        if (number > 0 && !sr.flipX)
-        {
-            Debug.Log(number);
-            Debug.Log(number * -1f);
-            return number * -1f;
-        }
-        if (number < 0 && !sr.flipX)
-        {
-            Debug.Log(number);
-            return number;
-        }
-        if (number < 0 && sr.flipX)
-        {
-            Console.WriteLine(number);
-            Console.WriteLine(number * -1f);
-            return number * -1f;
-        }
-
-        return number;
     }
 
 }

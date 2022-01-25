@@ -9,13 +9,16 @@ public class GrabCommand : MonoBehaviour
     public Transform boxHolder;
     public Transform box;
     public float rayDist;
-
+    public GameObject grabIcon;
+    
     public bool grabbing = false;
+
+    public Animator animator;
 
     // Update is called once per frame
     void Update()
     {
-        RaycastHit2D grabCheck = Physics2D.Raycast(grabDetect.position, Vector2.right * transform.localScale, rayDist);
+        RaycastHit2D grabCheck = Physics2D.Raycast(grabDetect.position, Vector2.zero * transform.localScale, rayDist);
 
         if (grabCheck.collider != null && grabCheck.collider.tag == "Box")
         {
@@ -23,24 +26,31 @@ public class GrabCommand : MonoBehaviour
             {
                 grabCheck.collider.gameObject.transform.parent = boxHolder;
                 grabCheck.collider.gameObject.transform.position = boxHolder.position;
-                grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
+                grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
+                grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().constraints = (RigidbodyConstraints2D)RigidbodyConstraints.FreezeRotationZ;
+                grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().simulated = false;
                 grabbing = true;
-                GetComponent<SpriteRenderer>().color = Color.red;
+                grabCheck.collider.gameObject.SetActive(false);
+                animator.SetBool("Grab", true);
             }
             else
             {
-                GetComponent<SpriteRenderer>().color = Color.black;
-                box.gameObject.transform.parent = null;
-                box.GetComponent<Rigidbody2D>().isKinematic = false;
+                grabIcon.SetActive(true);
+                grabCheck.collider.gameObject.transform.parent = null;
+                grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+                grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().constraints = new RigidbodyConstraints2D();
             }
 
         }
         else
         {
-            GetComponent<SpriteRenderer>().color = Color.white;
+            grabIcon.SetActive(false);
             if (Input.GetKeyDown("space") && grabbing == true)
             {
+                box.GetComponent<Rigidbody2D>().simulated = true;
                 grabbing = false;
+                animator.SetBool("Grab", false);
+                box.gameObject.SetActive(true);
                 box.transform.parent = null;
                 box.GetComponent<Rigidbody2D>().isKinematic = false;
                 if (GetComponent<SpriteRenderer>().flipX == true)
