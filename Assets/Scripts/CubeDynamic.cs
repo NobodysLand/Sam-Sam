@@ -7,8 +7,15 @@ public class CubeDynamic : MonoBehaviour
 
     public GameObject player;
     public bool worldStatus;
-    public Transform groundDetect;
-    private float distToGround;
+    //public Camera camera;
+
+
+    public Transform groundCheck;
+    public float groundCheckRadius;
+    public LayerMask groundLayer;
+    public bool isTouchingGround;
+    public bool touched;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,19 +27,21 @@ public class CubeDynamic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //RaycastHit2D groundCheck = Physics2D.Raycast(groundDetect.position, Vector2.down);
 
-        //if (groundCheck.collider != null && groundCheck.collider.tag == "Ground")
+        isTouchingGround = Physics2D.OverlapCircle(transform.position, groundCheckRadius, groundLayer);
+
+        if (isTouchingGround)
+        {
+            worldStatus = !worldStatus;
+        }
+
+        //if (worldStatus)
         //{
-        //    worldStatus = !worldStatus;
+        //    camera.backgroundColor = new Color(119, 168, 203, 0);
         //}
-
-        Ray FootRay;
-        RaycastHit hit;
-        FootRay = new Ray(gameObject.transform.position, Vector3.down);
-        //Debug.Log(FootRay);
-        //if (FootRay) { 
-        //    worldStatus = Physics.Raycast(FootRay, out hit, 1.0f);
+        //else
+        //{
+        //    camera.backgroundColor = new Color(100, 0, 0);
         //}
 
     }

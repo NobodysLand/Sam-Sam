@@ -1,0 +1,600 @@
+fileFormatVersion: 2
+guid: cb93e295a9d3b5444a0e9ca8c36ae810
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8374656354045794054
+    second: Samantha_purple_jumping_grabbing_0
+  - first:
+      213: 6631667584927388641
+    second: Samantha_purple_jumping_grabbing_1
+  - first:
+      213: -8589054532980292332
+    second: Samantha_purple_jumping_grabbing_2
+  - first:
+      213: 1086970531475290011
+    second: Samantha_purple_jumping_grabbing_3
+  - first:
+      213: -1025987006215953249
+    second: Samantha_purple_jumping_grabbing_4
+  - first:
+      213: 512485884119751301
+    second: Samantha_purple_jumping_grabbing_5
+  - first:
+      213: -1776782372308755225
+    second: Samantha_purple_jumping_grabbing_6
+  - first:
+      213: 6563714387352593974
+    second: Samantha_purple_jumping_grabbing_7
+  - first:
+      213: 4709975649852485840
+    second: Samantha_purple_jumping_grabbing_8
+  - first:
+      213: 8257579542378199814
+    second: Samantha_purple_jumping_grabbing_9
+  - first:
+      213: 6511489243551814801
+    second: Samantha_purple_jumping_grabbing_10
+  - first:
+      213: 825347823950142642
+    second: Samantha_purple_jumping_grabbing_11
+  - first:
+      213: 4308234161592222952
+    second: Samantha_purple_jumping_grabbing_12
+  - first:
+      213: -6412690672752345013
+    second: Samantha_purple_jumping_grabbing_13
+  - first:
+      213: -3843314804354844187
+    second: Samantha_purple_jumping_grabbing_14
+  - first:
+      213: 123184321572925228
+    second: Samantha_purple_jumping_grabbing_15
+  - first:
+      213: -6557127739612536234
+    second: Samantha_purple_jumping_grabbing_16
+  - first:
+      213: -7130589721518015062
+    second: Samantha_purple_jumping_grabbing_17
+  - first:
+      213: -6329688520052357374
+    second: Samantha_purple_jumping_grabbing_18
+  - first:
+      213: -4354015870807988105
+    second: Samantha_purple_jumping_grabbing_19
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Samantha_purple_jumping_grabbing_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 59
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af8e125ba6e37cb80800000000000000
+      internalID: -8374656354045794054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samantha_purple_jumping_grabbing_1
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 59
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e3d11c488a680c50800000000000000
+      internalID: 6631667584927388641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samantha_purple_jumping_grabbing_2
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 59
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4154045b86c8dc880800000000000000
+      internalID: -8589054532980292332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samantha_purple_jumping_grabbing_3
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 59
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b97f6e970f1b51f00800000000000000
+      internalID: 1086970531475290011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samantha_purple_jumping_grabbing_4
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 59
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f94e456f046f2c1f0800000000000000
+      internalID: -1025987006215953249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samantha_purple_jumping_grabbing_5
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 57
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58a1c534237bc1700800000000000000
+      internalID: 512485884119751301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samantha_purple_jumping_grabbing_6
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 57
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ec5c5f98d99757e0800000000000000
+      internalID: -1776782372308755225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samantha_purple_jumping_grabbing_7
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 57
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 636a541957ff61b50800000000000000
+      internalID: 6563714387352593974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samantha_purple_jumping_grabbing_8
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 57
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d0723626e13d5140800000000000000
+      internalID: 4709975649852485840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samantha_purple_jumping_grabbing_9
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 57
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60b3cffd7d0d89270800000000000000
+      internalID: 8257579542378199814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samantha_purple_jumping_grabbing_10
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 9
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 194dea8b7f47d5a50800000000000000
+      internalID: 6511489243551814801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samantha_purple_jumping_grabbing_11
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 9
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bc90b61979347b00800000000000000
+      internalID: 825347823950142642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samantha_purple_jumping_grabbing_12
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 9
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e448ead42ce9cb30800000000000000
+      internalID: 4308234161592222952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samantha_purple_jumping_grabbing_13
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 9
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b40c22c1fcb8107a0800000000000000
+      internalID: -6412690672752345013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samantha_purple_jumping_grabbing_14
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 9
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e9fd665c8dc9aac0800000000000000
+      internalID: -3843314804354844187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samantha_purple_jumping_grabbing_15
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 9
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2f6041ec73a5b100800000000000000
+      internalID: 123184321572925228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samantha_purple_jumping_grabbing_16
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 9
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 652e88ddf076005a0800000000000000
+      internalID: -6557127739612536234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samantha_purple_jumping_grabbing_17
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 9
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aadfdd18d6e0b0d90800000000000000
+      internalID: -7130589721518015062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samantha_purple_jumping_grabbing_18
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 9
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 207496fb3dd6828a0800000000000000
+      internalID: -6329688520052357374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samantha_purple_jumping_grabbing_19
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 9
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 778a31252ad6393c0800000000000000
+      internalID: -4354015870807988105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: e39d51d7105faf94594427fbb7d37550
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

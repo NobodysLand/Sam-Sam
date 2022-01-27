@@ -12,6 +12,13 @@ public class CharacterMovement : MonoBehaviour
     public GameObject grabHolder;
     public Animator animator;
 
+    public Transform groundCheck;
+    public float groundCheckRadius;
+    public LayerMask groundLayer;
+    public bool isTouchingGround;
+
+    public Vector2 verticalV; 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,12 +30,30 @@ public class CharacterMovement : MonoBehaviour
     void Update()
     {
 
+        isTouchingGround = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
 
+        if (isTouchingGround)
+        {
+            animator.SetBool("Ground", true);
+        }
+        else
+        {
+            animator.SetBool("Ground", false);
+        }
 
         float dirX = Input.GetAxis("Horizontal");
         float dirY = Input.GetAxis("Vertical");
 
         rb.velocity = new Vector2(dirX * 7f, rb.velocity.y);
+
+        if(rb.velocity.y < 0)
+        {
+            animator.SetBool("Falling", true);
+        }
+        else
+        {
+            animator.SetBool("Falling", false);
+        }
 
         animator.SetFloat("Speed", Mathf.Abs(dirX));
 
@@ -38,9 +63,9 @@ public class CharacterMovement : MonoBehaviour
 
         }
 
-        if (Input.GetKeyDown("up"))
+        if (Input.GetKeyDown("up") && isTouchingGround)
         {
-            rb.velocity = new Vector3(rb.velocity.x, 5f, 0);
+            rb.velocity = new Vector3(rb.velocity.x, 7.5f, 0);
         }
 
         if (Input.GetKeyDown("left"))
