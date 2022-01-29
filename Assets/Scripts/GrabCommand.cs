@@ -10,11 +10,13 @@ public class GrabCommand : MonoBehaviour
     public Transform box;
     public float rayDist;
     public GameObject grabIcon;
-    
+
     public bool grabbing = false;
 
     public Animator animator;
 
+
+    public GameObject cube;
     // Update is called once per frame
     void Update()
     {
@@ -32,6 +34,7 @@ public class GrabCommand : MonoBehaviour
                 grabbing = true;
                 grabCheck.collider.gameObject.SetActive(false);
                 animator.SetBool("Grab", true);
+                cube.GetComponent<CubeDynamic>().switchWorld = false;
             }
             else
             {
@@ -55,11 +58,11 @@ public class GrabCommand : MonoBehaviour
                 box.GetComponent<Rigidbody2D>().isKinematic = false;
                 if (GetComponent<SpriteRenderer>().flipX == true)
                 {
-                    box.GetComponent<Rigidbody2D>().velocity = new Vector3(5f, 5f, 0);
+                    box.GetComponent<Rigidbody2D>().velocity = new Vector3(15f, 15f, 0);
                 }
                 if (GetComponent<SpriteRenderer>().flipX == false)
                 {
-                    box.GetComponent<Rigidbody2D>().velocity = new Vector3(-5f, 5f, 0);
+                    box.GetComponent<Rigidbody2D>().velocity = new Vector3(-15f, 15f, 0);
                 }
             }
         }

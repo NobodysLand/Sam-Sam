@@ -7,21 +7,28 @@ public class CubeDynamic : MonoBehaviour
 
     public GameObject player;
     public bool worldStatus;
-    //public Camera camera;
+    public new GameObject camera;
 
 
     public Transform groundCheck;
     public float groundCheckRadius;
     public LayerMask groundLayer;
     public bool isTouchingGround;
-    public bool touched;
+    public bool switchWorld;
+    private float shakeTimeRemaning, shakepower;
 
+    public GameObject HeavenTiles;
+    public GameObject HeavenBackground;
+
+    public GameObject HellTiles;
+    public GameObject HellBackground;
+
+    public AudioSource ambienceSound;
     // Start is called before the first frame update
     void Start()
     {
-        //Debug.Log(GetComponent<Rigidbody2D>().OverlapCollider );
         worldStatus = false;
-        //distToGround = GetComponent<Rigidbody2D>().collisionDetectionMode. collider.bounds.extents.y;
+        switchWorld = true;
     }
 
     // Update is called once per frame
@@ -30,23 +37,53 @@ public class CubeDynamic : MonoBehaviour
 
         isTouchingGround = Physics2D.OverlapCircle(transform.position, groundCheckRadius, groundLayer);
 
-        if (isTouchingGround)
+        if (isTouchingGround && !switchWorld)
         {
             worldStatus = !worldStatus;
+            switchWorld = true;
+            //StartShake(0.1f, 1f);
         }
 
-        //if (worldStatus)
-        //{
-        //    camera.backgroundColor = new Color(119, 168, 203, 0);
-        //}
-        //else
-        //{
-        //    camera.backgroundColor = new Color(100, 0, 0);
-        //}
+        if (worldStatus)
+        {
+            HeavenTiles.SetActive(true);
+            HeavenBackground.SetActive(true);
+
+            HellTiles.SetActive(false);
+            HellBackground.SetActive(false);
+
+            ambienceSound.pitch = 1.25f;
+            player.GetComponent<Animator>().SetBool("Change", false);
+        }
+        else
+        {
+            HellTiles.SetActive(true);
+            HellBackground.SetActive(true);
+
+            HeavenTiles.SetActive(false);
+            HeavenBackground.SetActive(false);
+
+            ambienceSound.pitch = 1f;
+            player.GetComponent<Animator>().SetBool("Change", true);
+        }
 
     }
 
-    //private bool IsGrounded(){
-    //    //return Physics.Raycast(transform.position, -Vector3.up, distToGround + 0.1);
+    //private void LateUpdate()
+    //{
+    //     if(shakeTimeRemaning > 0)
+    //    {
+    //        shakeTimeRemaning -= Time.deltaTime;
+
+    //        float xAmount = Random.Range(-1f, 1f) * shakepower;
+    //        float yAmount = Random.Range(-1f, 1f) * shakepower;
+    //        camera.transform.position += new Vector3(xAmount, yAmount, 0f);
+    //    }
+    //}
+
+    //public void StartShake(float length, float power)
+    //{
+    //    shakeTimeRemaning = length;
+    //    shakepower = power;
     //}
 }
