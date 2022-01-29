@@ -84,4 +84,11 @@ public class CharacterMovement : MonoBehaviour
         }
     }
 
+    public void Drown ()
+    {
+        rb.mass = 110;
+        rb.gravityScale = 5;
+        gameObject.GetComponent<CharacterMovement>().enabled = false;
+    }
+
 }

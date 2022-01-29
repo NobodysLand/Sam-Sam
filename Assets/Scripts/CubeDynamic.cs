@@ -21,6 +21,7 @@ public class CubeDynamic : MonoBehaviour
 
     public GameObject HellTiles;
     public GameObject HellBackground;
+    Rigidbody2D rg;
 
     public AudioSource ambienceSound;
     private AudioSource cubeSound;
@@ -31,6 +32,7 @@ public class CubeDynamic : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         cubeSound = gameObject.GetComponent<AudioSource>();
         camera = Camera.main.gameObject;
+        rg = gameObject.GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -83,5 +85,21 @@ public class CubeDynamic : MonoBehaviour
 
     }
 
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Fluid")
+        {
+            Debug.Log("Caiu na água é pexe kkkkk.");
+            rg.constraints = RigidbodyConstraints2D.FreezeRotation;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Fluid")
+        {
+            rg.constraints = RigidbodyConstraints2D.None;
+        }
+    }
 
 }

@@ -10,6 +10,8 @@ TagManager:
   - Heaven Scene
   - Hell Scene
   - Hell Background
+  - Fluid
+  - Ui
   layers:
   - Default
   - TransparentFX
