@@ -1542,7 +1542,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &259036440
 Transform:
   m_ObjectHideFlags: 0
@@ -1601,7 +1601,7 @@ TilemapCollider2D:
   m_GameObject: {fileID: 284899079}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: da56bbccfb9bda246b084f877a3a0c33, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -2655,7 +2655,11 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+  boxLayer:
+    serializedVersion: 2
+    m_Bits: 0
   isTouchingGround: 0
+  isTouchingBox: 0
   soundEffect: {fileID: 1495818314}
   jump: {fileID: 8300000, guid: 0f7bea6ec9cba8e419a59f1e5dcc2938, type: 3}
   fall: {fileID: 8300000, guid: ecc1119206417904a9ba3c3d013bc636, type: 3}
@@ -4596,7 +4600,7 @@ GameObject:
   - component: {fileID: 920285867}
   - component: {fileID: 920285868}
   - component: {fileID: 920285869}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube
   m_TagString: Box
   m_Icon: {fileID: 0}

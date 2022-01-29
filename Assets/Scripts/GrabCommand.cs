@@ -29,7 +29,7 @@ public class GrabCommand : MonoBehaviour
                 grabCheck.collider.gameObject.transform.parent = boxHolder;
                 grabCheck.collider.gameObject.transform.position = boxHolder.position;
                 grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
-                grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().constraints = (RigidbodyConstraints2D)RigidbodyConstraints.FreezeRotationZ;
+                //grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().constraints = (RigidbodyConstraints2D)RigidbodyConstraints.FreezeRotationZ;
                 grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().simulated = false;
                 grabbing = true;
                 grabCheck.collider.gameObject.SetActive(false);
@@ -41,7 +41,7 @@ public class GrabCommand : MonoBehaviour
                 grabIcon.SetActive(true);
                 grabCheck.collider.gameObject.transform.parent = null;
                 grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
-                grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().constraints = new RigidbodyConstraints2D();
+                //grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().constraints = new RigidbodyConstraints2D();
             }
 
         }

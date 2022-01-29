@@ -90,7 +90,7 @@ public class CubeDynamic : MonoBehaviour
         if (collision.gameObject.tag == "Fluid")
         {
             Debug.Log("Caiu na água é pexe kkkkk.");
-            rg.constraints = RigidbodyConstraints2D.FreezeRotation;
+            //rg.constraints = RigidbodyConstraints2D.FreezeRotation;
         }
     }
 
@@ -98,7 +98,7 @@ public class CubeDynamic : MonoBehaviour
     {
         if (collision.gameObject.tag == "Fluid")
         {
-            rg.constraints = RigidbodyConstraints2D.None;
+           // rg.constraints = RigidbodyConstraints2D.None;
         }
     }
 
