@@ -15,7 +15,9 @@ public class CharacterMovement : MonoBehaviour
     public Transform groundCheck;
     public float groundCheckRadius;
     public LayerMask groundLayer;
+    public LayerMask boxLayer;
     public bool isTouchingGround;
+    public bool isTouchingBox;
 
     public AudioSource soundEffect;
 
@@ -32,8 +34,9 @@ public class CharacterMovement : MonoBehaviour
     {
 
         isTouchingGround = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+        isTouchingBox = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, boxLayer);
 
-        if (isTouchingGround)
+        if (isTouchingGround || isTouchingBox)
         {
             animator.SetBool("Ground", true);
         }
@@ -60,7 +63,7 @@ public class CharacterMovement : MonoBehaviour
 
         animator.SetFloat("Speed", Mathf.Abs(dirX));
 
-        if (Input.GetKeyDown("up") && isTouchingGround)
+        if (Input.GetKeyDown("up") && isTouchingGround || Input.GetKeyDown("up") && isTouchingBox)
         {
             rb.velocity = new Vector3(rb.velocity.x, 7.5f, 0);
             soundEffect.clip = jump;
