@@ -17,21 +17,17 @@ public class CharacterMovement : MonoBehaviour
     public LayerMask groundLayer;
     public bool isTouchingGround;
 
-    public Vector2 verticalV;
-
     public AudioSource soundEffect;
 
     public AudioClip jump;
     public AudioClip fall;
 
-    // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
     }
 
-    // Update is called once per frame
     void Update()
     {
 
@@ -64,12 +60,6 @@ public class CharacterMovement : MonoBehaviour
 
         animator.SetFloat("Speed", Mathf.Abs(dirX));
 
-        //if (Input.GetKeyDown(KeyCode.LeftControl))
-        //{
-        //    animator.SetBool("Change", !animator.GetBool("Change"));
-            
-        //}
-
         if (Input.GetKeyDown("up") && isTouchingGround)
         {
             rb.velocity = new Vector3(rb.velocity.x, 7.5f, 0);
@@ -92,7 +82,6 @@ public class CharacterMovement : MonoBehaviour
             grabHolder.transform.position = new Vector3(GetComponent<Transform>().position.x + 1f, grabHolder.transform.position.y, grabHolder.transform.position.z);
             rb.velocity = new Vector3(5f, rb.velocity.y, 0);
         }
-
     }
 
 }

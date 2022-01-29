@@ -24,10 +24,9 @@ public class CubeDynamic : MonoBehaviour
 
     public AudioSource ambienceSound;
     private AudioSource cubeSound;
-    // Start is called before the first frame update
+
     void Awake()
     {
-        worldStatus = false;
         switchWorld = true;
         player = GameObject.FindGameObjectWithTag("Player");
         cubeSound = gameObject.GetComponent<AudioSource>();
@@ -46,7 +45,13 @@ public class CubeDynamic : MonoBehaviour
             switchWorld = true;
             cubeSound.Play();
             camera.GetComponent<CameraMovement>().Shake();
+            
         }
+        if (!isTouchingGround)
+        {
+            switchWorld = false;
+        }
+        
 
         if (worldStatus)
         {
@@ -58,6 +63,9 @@ public class CubeDynamic : MonoBehaviour
 
             ambienceSound.pitch = 1.25f;
             player.GetComponent<Animator>().SetBool("Change", false);
+
+            camera.GetComponent<Camera>().backgroundColor = new Color(117, 197, 255, 0);
+            
         }
         else
         {
@@ -69,7 +77,11 @@ public class CubeDynamic : MonoBehaviour
 
             ambienceSound.pitch = 1f;
             player.GetComponent<Animator>().SetBool("Change", true);
+
+            camera.GetComponent<Camera>().backgroundColor = new Color(39, 0, 2, 0);
         }
 
     }
+
+
 }

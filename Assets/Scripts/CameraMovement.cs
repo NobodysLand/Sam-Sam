@@ -9,6 +9,7 @@ public class CameraMovement : MonoBehaviour
     public GameObject player;
     public float offset;
     public float offsetSmoothing;
+    public float minBoundY, maxBoundY, minBoundX, maxBoundX;
     private Vector3 playerPosition;
 
     // Start is called before the first frame update
@@ -20,16 +21,11 @@ public class CameraMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        playerPosition = new Vector3(player.transform.position.x, transform.position.y, transform.position.z);
-
-        if (player.transform.localScale.x > 0f)
-        {
-            playerPosition = new Vector3(playerPosition.x + offset, playerPosition.y, playerPosition.z);
-        }
-        else
-        {
-            playerPosition = new Vector3(playerPosition.x - offset, playerPosition.y, playerPosition.z);
-        }
+        playerPosition = new Vector3(
+            Mathf.Clamp(player.transform.position.x, minBoundX, maxBoundX),
+            Mathf.Clamp(player.transform.position.y, minBoundY, maxBoundY),
+            transform.position.z
+        );
 
         transform.position = Vector3.Lerp(transform.position, playerPosition, offsetSmoothing * Time.deltaTime);
     }
@@ -62,7 +58,6 @@ public class CameraMovement : MonoBehaviour
 
         while (elapsed < duration)
         {
-            Debug.Log("faltam:" + elapsed + " segundos");
             float y = Random.Range(playerPosition.y - shake, playerPosition.y + shake);
             float x = Random.Range(playerPosition.x - shake, playerPosition.x + shake);
 
