@@ -15,7 +15,6 @@ public class CubeDynamic : MonoBehaviour
     public LayerMask groundLayer;
     public bool isTouchingGround;
     public bool switchWorld;
-    private float shakeTimeRemaning, shakepower;
 
     public GameObject HeavenTiles;
     public GameObject HeavenBackground;
@@ -24,11 +23,15 @@ public class CubeDynamic : MonoBehaviour
     public GameObject HellBackground;
 
     public AudioSource ambienceSound;
+    private AudioSource cubeSound;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         worldStatus = false;
         switchWorld = true;
+        player = GameObject.FindGameObjectWithTag("Player");
+        cubeSound = gameObject.GetComponent<AudioSource>();
+        camera = Camera.main.gameObject;
     }
 
     // Update is called once per frame
@@ -41,7 +44,8 @@ public class CubeDynamic : MonoBehaviour
         {
             worldStatus = !worldStatus;
             switchWorld = true;
-            //StartShake(0.1f, 1f);
+            cubeSound.Play();
+            camera.GetComponent<CameraMovement>().Shake();
         }
 
         if (worldStatus)
@@ -68,22 +72,4 @@ public class CubeDynamic : MonoBehaviour
         }
 
     }
-
-    //private void LateUpdate()
-    //{
-    //     if(shakeTimeRemaning > 0)
-    //    {
-    //        shakeTimeRemaning -= Time.deltaTime;
-
-    //        float xAmount = Random.Range(-1f, 1f) * shakepower;
-    //        float yAmount = Random.Range(-1f, 1f) * shakepower;
-    //        camera.transform.position += new Vector3(xAmount, yAmount, 0f);
-    //    }
-    //}
-
-    //public void StartShake(float length, float power)
-    //{
-    //    shakeTimeRemaning = length;
-    //    shakepower = power;
-    //}
 }

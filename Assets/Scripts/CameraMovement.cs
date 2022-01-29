@@ -12,9 +12,9 @@ public class CameraMovement : MonoBehaviour
     private Vector3 playerPosition;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
@@ -49,5 +49,33 @@ public class CameraMovement : MonoBehaviour
 
         transform.position = Vector3.Lerp(transform.position, playerPosition, offsetSmoothing * Time.deltaTime);
     }
+    public void Shake()
+    {
+        StartCoroutine(IShake(0.16f,0.05f));
+        Debug.Log("Eeeeita cuzão kkkk vai cair jão kkkkk");
+    }
+
+    IEnumerator IShake(float duration, float shake)
+    {
+        Vector3 originalPos = playerPosition;
+        float elapsed = 0.0f;
+
+        while (elapsed < duration)
+        {
+            Debug.Log("faltam:" + elapsed + " segundos");
+            float y = Random.Range(playerPosition.y - shake, playerPosition.y + shake);
+            float x = Random.Range(playerPosition.x - shake, playerPosition.x + shake);
+
+            transform.localPosition = new Vector3(x, y, playerPosition.z);
+            elapsed += Time.deltaTime;
+
+            yield return null;
+        }
+
+        transform.localPosition = originalPos;
+    }
+
 
 }
+
+

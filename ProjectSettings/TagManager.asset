@@ -7,6 +7,9 @@ TagManager:
   - Box
   - Ground
   - Wall
+  - Heaven Scene
+  - Hell Scene
+  - Hell Background
   layers:
   - Default
   - TransparentFX
