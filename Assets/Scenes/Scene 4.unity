@@ -1620,7 +1620,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -2.6700134, y: -1.2899933}
+  m_AnchoredPosition: {x: -2.669983, y: -1.289978}
   m_SizeDelta: {x: 23.11, y: 16.77}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1025932636
@@ -4095,7 +4095,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Coding: F\xE1bio de Alencar"
+  m_Text: 'Coding: Fabio de Alencar'
 --- !u!222 &1300927463
 CanvasRenderer:
   m_ObjectHideFlags: 0
