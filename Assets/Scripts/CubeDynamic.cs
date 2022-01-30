@@ -33,6 +33,7 @@ public class CubeDynamic : MonoBehaviour
         cubeSound = gameObject.GetComponent<AudioSource>();
         camera = Camera.main.gameObject;
         rg = gameObject.GetComponent<Rigidbody2D>();
+        ambienceSound = GameObject.Find("Ambience").GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
