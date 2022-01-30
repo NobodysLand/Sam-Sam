@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class UiBehavior : MonoBehaviour
 {
-    private Animator blackImg;
-    private Animator text;
+    public Animator blackImg;
+    public Animator text;
 
     private void Awake()
     {
@@ -16,8 +16,8 @@ public class UiBehavior : MonoBehaviour
     }
     public void ShowDeathText ()
     {
-        blackImg.SetTrigger("Fade in");
-        text.SetTrigger("Blackout");
+        blackImg.SetTrigger("Blackout");
+        text.SetTrigger("Fade in");
     }
 
     public void Blackin ()
