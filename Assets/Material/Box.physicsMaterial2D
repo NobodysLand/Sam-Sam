@@ -8,4 +8,4 @@ PhysicsMaterial2D:
   m_PrefabAsset: {fileID: 0}
   m_Name: Box
   friction: 15
-  bounciness: 0.06
+  bounciness: 0.09

@@ -10,8 +10,6 @@ public class MusicBehavior : MonoBehaviour
 
     void Awake ()
     {
-        string path = Application.dataPath;
-        Debug.Log(path + "/Sounds/musica1");
         songPlayer = gameObject.GetComponent<AudioSource>();
     }
 
