@@ -5,9 +5,23 @@ using UnityEngine.SceneManagement;
 
 public class UiBehavior : MonoBehaviour
 {
+    private Animator blackImg;
+    private Animator text;
+
+    private void Awake()
+    {
+        blackImg = transform.Find("Blackout").GetComponent<Animator>();
+        text = transform.Find("Death").GetComponent<Animator>();
+
+    }
     public void ShowDeathText ()
     {
-        transform.Find("Death").GetComponent<Animator>().SetTrigger("Fade in");
-        transform.Find("Blackout").GetComponent<Animator>().SetTrigger("Blackout");
+        blackImg.SetTrigger("Fade in");
+        text.SetTrigger("Blackout");
+    }
+
+    public void Blackin ()
+    {
+        blackImg.SetTrigger("Blackin");
     }
 }
