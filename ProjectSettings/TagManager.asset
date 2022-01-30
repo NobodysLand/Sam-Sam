@@ -12,6 +12,7 @@ TagManager:
   - Hell Background
   - Fluid
   - Ui
+  - Video
   layers:
   - Default
   - TransparentFX
@@ -22,7 +23,7 @@ TagManager:
   - Ground
   - Box
   - Triggers
-  - 
+  - Video
   - 
   - 
   - 

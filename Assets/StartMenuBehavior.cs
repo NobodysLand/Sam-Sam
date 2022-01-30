@@ -6,8 +6,10 @@ using UnityEngine.SceneManagement;
 public class StartMenuBehavior : MonoBehaviour
 {
     public GameObject Canvas;
-    private bool started = false;
+    private bool started = true;
     private AudioSource playSound;
+    public GameObject video;
+    public GameObject startMenu;
 
     private void Awake()
     {
@@ -16,7 +18,8 @@ public class StartMenuBehavior : MonoBehaviour
 
     private void Start()
     {
-        Canvas.transform.Find("Blackout").GetComponent<Animator>().SetTrigger("Blackin");
+        //Canvas.transform.Find("Blackout").GetComponent<Animator>().SetTrigger("Blackin");
+        StartCoroutine("EnableMenu");
     }
 
     private void Update()
@@ -33,6 +36,18 @@ public class StartMenuBehavior : MonoBehaviour
         Canvas.transform.Find("Blackout").GetComponent<Animator>().SetTrigger("Blackout");
         yield return new WaitForSeconds(3f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    IEnumerator EnableMenu()
+    {
+        Canvas.transform.Find("Blackout").GetComponent<Animator>().SetTrigger("Blackout");
+
+        yield return new WaitForSeconds(45f);
+
+
+        started = false;
+        startMenu.SetActive(true);
+        video.SetActive(false);
     }
 
 }
