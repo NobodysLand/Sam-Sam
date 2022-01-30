@@ -1952,6 +1952,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 39599143342375674, guid: 0a51d71c4f48cb8468772c11adfbce01, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 39599143342375675, guid: 0a51d71c4f48cb8468772c11adfbce01, type: 3}
       propertyPath: m_Name
       value: Sam
@@ -4666,6 +4670,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 39599143342375670, guid: 0a51d71c4f48cb8468772c11adfbce01, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 39599143342375674, guid: 0a51d71c4f48cb8468772c11adfbce01, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 39599143342375675, guid: 0a51d71c4f48cb8468772c11adfbce01, type: 3}

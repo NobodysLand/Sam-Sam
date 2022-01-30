@@ -6,6 +6,13 @@ using UnityEngine.SceneManagement;
 public class StartMenuBehavior : MonoBehaviour
 {
     public GameObject Canvas;
+    private bool started = false;
+    private AudioSource playSound;
+
+    private void Awake()
+    {
+        playSound = transform.Find("Sound play").GetComponent<AudioSource>();
+    }
 
     private void Start()
     {
@@ -14,9 +21,10 @@ public class StartMenuBehavior : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space)) {
+        if (Input.GetKeyDown(KeyCode.Space) && started == false ) {
+            started = true;
+            playSound.Play();
             StartCoroutine("StartGame");
-            
         }
     }
 
