@@ -47,14 +47,13 @@ public class CubeDynamic : MonoBehaviour
             switchWorld = true;
             cubeSound.Play();
             camera.GetComponent<CameraMovement>().Shake();
-            
+            ambienceSound.GetComponent<MusicBehavior>().SwitchSongs(worldStatus);
         }
         if (!isTouchingGround)
         {
             switchWorld = false;
         }
         
-
         if (worldStatus)
         {
             HeavenTiles.SetActive(true);
@@ -63,11 +62,9 @@ public class CubeDynamic : MonoBehaviour
             HellTiles.SetActive(false);
             HellBackground.SetActive(false);
 
-            ambienceSound.pitch = 1.25f;
             player.GetComponent<Animator>().SetBool("Change", false);
 
-            camera.GetComponent<Camera>().backgroundColor = new Color(117, 197, 255, 0);
-            
+            camera.GetComponent<Camera>().backgroundColor = new Color(0.4575472f, 0.7739778f, 1, 1);
         }
         else
         {
@@ -77,12 +74,15 @@ public class CubeDynamic : MonoBehaviour
             HeavenTiles.SetActive(false);
             HeavenBackground.SetActive(false);
 
-            ambienceSound.pitch = 1f;
             player.GetComponent<Animator>().SetBool("Change", true);
 
-            camera.GetComponent<Camera>().backgroundColor = new Color(39, 0, 2, 0);
+            camera.GetComponent<Camera>().backgroundColor = new Color(0.509434f, 0, 0.1293091f, 1); ;
         }
+    }
 
+    public bool GetWorldStatus ()
+    {
+        return worldStatus;
     }
 
     void OnTriggerEnter2D(Collider2D collision)
