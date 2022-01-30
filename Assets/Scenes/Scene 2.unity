@@ -10842,7 +10842,7 @@ GameObject:
   - component: {fileID: 1825003127}
   - component: {fileID: 1825003130}
   - component: {fileID: 1825003131}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Teleport
   m_TagString: Untagged
   m_Icon: {fileID: 0}
