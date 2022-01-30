@@ -8591,6 +8591,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ab912631d21ca648bf0b98ca604a07c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blackImg: {fileID: 0}
+  text: {fileID: 0}
 --- !u!114 &1154199661
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10946,7 +10948,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.04}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -10957,7 +10959,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.36, y: 0.33}
+  m_Size: {x: 0.18, y: 0.24}
   m_EdgeRadius: 0
 --- !u!114 &1825003131
 MonoBehaviour:
@@ -12182,6 +12184,10 @@ PrefabInstance:
     - target: {fileID: 39599143342375675, guid: 0a51d71c4f48cb8468772c11adfbce01, type: 3}
       propertyPath: m_Name
       value: Sam
+      objectReference: {fileID: 0}
+    - target: {fileID: 5381004388945101891, guid: 0a51d71c4f48cb8468772c11adfbce01, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.27
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a51d71c4f48cb8468772c11adfbce01, type: 3}

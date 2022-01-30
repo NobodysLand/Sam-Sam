@@ -1620,8 +1620,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.5}
-  m_SizeDelta: {x: 0, y: -1}
+  m_AnchoredPosition: {x: -2.6700134, y: -1.2899933}
+  m_SizeDelta: {x: 23.11, y: 16.77}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1025932636
 Animator:
@@ -1655,7 +1655,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1834,6 +1834,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ab912631d21ca648bf0b98ca604a07c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blackImg: {fileID: 0}
+  text: {fileID: 0}
 --- !u!114 &1159274758
 MonoBehaviour:
   m_ObjectHideFlags: 0
