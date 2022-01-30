@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor;
 
 public class MusicBehavior : MonoBehaviour
 {
@@ -11,10 +10,9 @@ public class MusicBehavior : MonoBehaviour
 
     void Awake ()
     {
+        string path = Application.dataPath;
+        Debug.Log(path + "/Sounds/musica1");
         songPlayer = gameObject.GetComponent<AudioSource>();
-        Debug.Log(AssetDatabase.LoadAssetAtPath<AudioClip>("Assets/Sounds/musica1.mp3"));
-        pinkSamSong = AssetDatabase.LoadAssetAtPath<AudioClip>("Assets/Sounds/musica1.mp3"); 
-        purpleSamSong = AssetDatabase.LoadAssetAtPath<AudioClip>("Assets/Sounds/musica2.wav");
     }
 
     public void SwitchSongs (bool world)

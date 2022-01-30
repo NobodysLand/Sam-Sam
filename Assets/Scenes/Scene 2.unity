@@ -9530,7 +9530,7 @@ TilemapCollider2D:
   m_GameObject: {fileID: 1279596564}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: da56bbccfb9bda246b084f877a3a0c33, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -10400,8 +10400,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db031c6e8da7dee418f4efd2b091af2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pinkSamSong: {fileID: 0}
-  purpleSamSong: {fileID: 0}
+  pinkSamSong: {fileID: 8300000, guid: e5f68d816f3d59c4ab43c7ab3d95a44f, type: 3}
+  purpleSamSong: {fileID: 8300000, guid: bb759912a175c20449fdfbea914bac32, type: 3}
 --- !u!1 &1648614175
 GameObject:
   m_ObjectHideFlags: 0
@@ -10957,7 +10957,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.27, y: 0.33}
+  m_Size: {x: 0.36, y: 0.33}
   m_EdgeRadius: 0
 --- !u!114 &1825003131
 MonoBehaviour:
@@ -11449,7 +11449,7 @@ TilemapCollider2D:
   m_GameObject: {fileID: 2053555765}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: da56bbccfb9bda246b084f877a3a0c33, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
